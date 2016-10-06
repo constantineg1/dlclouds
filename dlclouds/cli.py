@@ -11,7 +11,6 @@ Assemble, Train and Deploy Deep Neural Nets in AWS
 from __future__ import unicode_literals
 from __future__ import division
 
-import click
 import sys
 
 CLI_COMMANDS = [
