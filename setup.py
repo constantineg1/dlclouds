@@ -9,7 +9,12 @@ setup(
     version='1.0.0.dev1',
     packages=find_packages(exclude=['build*','contrib', 'docs', 'tests*']),
     package_dir={'': './'},
-    scripts=['bin/dlclouds'],
+    entry_points={
+        'console_scripts': [
+            'dlclouds=dlclouds.cli:handle',
+            # 'dlc=dlclouds.cli:handle',
+        ]
+    },
     url='dlclouds.com',
     license='MIT',
     author='Constantine G.',
