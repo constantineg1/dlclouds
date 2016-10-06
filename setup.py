@@ -12,11 +12,11 @@ setup(
     entry_points={
         'console_scripts': [
             'dlclouds=dlclouds.cli:handle',
-            # 'dlc=dlclouds.cli:handle',
+            'dlc=dlclouds.cli:handle',
         ]
     },
-    url='dlclouds.com',
-    license='MIT',
+    url='http://dlclouds.com',
+    license='Apache License, Version 2.0',
     author='Constantine G.',
     author_email='constantine.gurnov@gmail.com',
     description=''
