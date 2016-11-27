@@ -57,14 +57,19 @@ class DLCloudsCLI(object):
                 sys.exit(-1)
 
         if command == 'init':
+            #create settings file
             print 'init'
         if command == 'deploy':
+            #start env, deploy sources
             print 'deploy'
         elif command == 'push':
+            #push sources to env
             print 'push'
         elif command == 'pull':
+            #pull sources from env
             print 'pull'
         elif command == 'shutdown':
+            #shutdown ec2
             print 'shutdown'
 
     def load_settings(self, file_name="dlclouds_settings.json"):
